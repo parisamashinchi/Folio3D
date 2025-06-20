@@ -4,7 +4,7 @@ import { TopBannerSection } from "./sections/TopBannerSection";
 import  Abilities  from "./sections/Abilities";
 import { Experience } from "./sections/Experience";
 import { Skills } from "./sections/Skills"
-import { Contact } from "./sections/contact";
+import { Contact } from "./sections/Contact";
 
 function App() {
 
