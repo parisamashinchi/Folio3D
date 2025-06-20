@@ -1,6 +1,6 @@
 import { HeadTitle } from "../components/HeadTitle";
 import { experiences } from "../constant/index";
-import { ExperienceCard } from "../components/experienceCard";
+import { ExperienceCard } from "../components/ExperienceCard";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
