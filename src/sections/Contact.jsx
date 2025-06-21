@@ -43,18 +43,18 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex-center section-padding  md:mt-40 mt-20"
+      className="flex-center px-5 md:px-10 md:mt-40 mt-20  "
     >
-      <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full h-full md:px-10 xl:px-5 ">
         <HeadTitle
           title="Let’s Connect and Collaborate"
           subTitle="💬 Got a project or idea? I’d love to hear from you! 🚀"
         />
 
-        <div className="flex flex-col justify-center items-center gap-5 ">
+        <div className="flex flex-col justify-center items-center xl:gap-5  ">
           <ContactModel />
 
-          <div className="w-[400px] border border-black-50 bg-black-100 rounded-xl p-5">
+          <div className="w-[300px] xl:w-[400px] border border-black-50 bg-black-100 rounded-xl p-5 mb-20 ">
             <form
               ref={formRef}
               onSubmit={handleSubmit}

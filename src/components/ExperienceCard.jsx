@@ -1,4 +1,4 @@
-import {  useRef } from "react";
+import { useRef } from "react";
 
 export const ExperienceCard = ({ exp, index }) => {
   // refs for all the cards
@@ -28,14 +28,17 @@ export const ExperienceCard = ({ exp, index }) => {
     <div
       ref={(el) => (cardRefs.current[index] = el)}
       onMouseMove={handleMouseMove(index)}
-      className="flex card card-border top-[-50px] right-20 relative rounded-xl p-5 mb-3 break-inside-avoid-column xl:w-4/6 justify-end ml-auto"
+      className="flex card card-border xl:top-[-50px] xl:right-20 relative rounded-xl pl-5 xl:p-5 mb-3 break-inside-avoid-column xl:w-4/6 justify-end ml-auto"
     >
       <div className="border-light"></div>
+      <div className="xl:hidden size-20 md:size-20 xl:size-10  left-[-10px] relative ">
+        <img src={exp.logoPath} alt="logo" className="rounded-full" />
+      </div>
 
-      <div className="flex items-start">  
+      <div className="flex items-start">
         <div className="flex xl:gap-10 md:gap-6 gap-5 relative z-20">
           <div>
-            <h1 className="font-semibold text-3xl">{exp.title}</h1>
+            <h1 className="font-semibold  text-xl xl:text-3xl">{exp.title}</h1>
             <p className="my-2 text-white-50">🗓️&nbsp;{exp.date}</p>
             <p className="text-[#839CB5] italic">Responsibilities</p>
             <ul className="list-disc ms-5 mt-3 flex flex-col gap-3 text-white-50">

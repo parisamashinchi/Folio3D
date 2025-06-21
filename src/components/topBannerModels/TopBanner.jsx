@@ -3,13 +3,12 @@ import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 import { LateNightOffice } from "./LateNightOffice.jsx";
 import TopBannerLights from "./TopBannerLight.jsx";
-import CustomGeometryParticles from "./particles.jsx";
 
 export const TopBanner = () => {
   const isMobile = useMediaQuery({ query: "(max-width:768px)" });
   return (
     <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
-      <CustomGeometryParticles />
+      
       <OrbitControls
         enablePan={true}
         enableZoom={false}

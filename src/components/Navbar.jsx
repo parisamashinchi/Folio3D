@@ -3,6 +3,7 @@ import { NavLinks } from "../constant/index";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [collapsedMenu, setCollapsedMenu] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -13,6 +14,10 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  function handleCollapseMenu() {
+    setCollapsedMenu(!collapsedMenu);
+  }
 
   return (
     <header
@@ -42,7 +47,24 @@ export const Navbar = () => {
             ))}
           </ul>
         </nav>
+        <nav className="lg:hidden flex flex-col items-center">
+          <img src="images/menu.svg" alt="menu" onClick={handleCollapseMenu} />
+        </nav>
       </div>
+      {collapsedMenu && (
+        <ul className="flex flex-col justify-end gap-3 mt-2">
+          {NavLinks.map(({ link, name }) => (
+            <li key={name} className="text-white-50 relative group">
+              <a href={link}>
+                <span className="transition-colors duration-300 hover:text-white ">
+                  {name}
+                </span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 };

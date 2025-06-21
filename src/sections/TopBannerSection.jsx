@@ -54,14 +54,14 @@ export const TopBannerSection = () => {
               <h3> For Real-World Use</h3>
             </div>
           
-          <p className="text-white-50 md:text-2xl text-xl font-light mt-4">
+          <p className="text-white-50 md:text-2xl text-l font-light mt-4">
             Hi, I’m Parisa — a frontend developer who turns complex ideas into
             beautiful, functional web experiences.
           </p>
           <Button text="my projects" className="md:h-14 h-12 md:w-70 w-50" />
           </div>
         </header>
-        <figure className="TopBanner-3d-layout flex items-center mt-48">
+        <figure className="TopBanner-3d-layout flex flex-col items-center xl:mt-48">
             <TopBanner/>
         </figure> 
       </div>

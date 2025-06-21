@@ -33,24 +33,23 @@ export const Skills = () => {
           {skillsIcons.map((skillIcon) => (
             <div
               key={skillIcon.name}
-              className="card-border skill-card overflow-hidden group xl:rounded-full rounded-lg "
+              className="card-border  skill-card overflow-hidden group xl:rounded-full rounded-lg"
             >
           
-              <div className="skill-card-animated-bg  " />
+              <div className="skill-card-animated-bg" />
               <div className="skill-card-content  cursor-none">
             
-                <div className="skill-icon-wrapper">
+                <div className="skill-icon-wrapper h-20 md:h-auto">
                   {skillIcon.modelPath
                     ? <SkillModel model={skillIcon} />
                     : <img
                         src={skillIcon.imgPath}
                         alt={skillIcon.name}
-                        width="100px"
-                        className=" object-cover"
+                        className=" object-cover w-10 xl:w-[100px]"
                       />
                   }
                 </div>
-                <div className="padding-x w-full  ">
+                <div className="padding-x w-full">
                   <p>{skillIcon.name}</p>
                 </div>
               </div>

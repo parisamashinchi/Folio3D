@@ -27,10 +27,10 @@ export const ProjectSection = () => {
           opacity: 1,
           y: 0,
           duration: 1,
-          delay: (index + 1) * 0.3,
+          delay: (index + 1) * 0.5,
           ScrollTrigger: {
             trigger: project,
-            start: "top 90%",
+            start: "top 50%",
           },
         }
       );
@@ -41,7 +41,7 @@ export const ProjectSection = () => {
     <section
       ref={sectionRef}
       id="projects"
-      className="flex gap-5 justify-between items-center w-full mt-20 px-5 md:px-20 py-10 md:py-20"
+      className="flex gap-5 justify-between items-center w-full xl:mt-20 mt-5 px-5 md:px-20 py-10 md:py-20"
     >
       <div className="w-full h-full md:px-10 px-5">
         <HeadTitle
@@ -51,19 +51,19 @@ export const ProjectSection = () => {
 
         <div className="flex flex-col xl:flex-row gap-7 justify-between mt-15 ">
           <div ref={project1Ref} className="flex flex-col  xl:w-[60%] gap-6">
-            <div className=" xl:h-[70vh] md:h-[50vh] h-96 relative">
+            <div className=" xl:h-auto md:h-[50vh] h-96 relative">
               <img
                 src="/images/project1.png"
                 alt="projects"
-                className=" w-full h-full object-cover rounded-xl absolute inset-0"
+                className=" w-full h-full xl:object-fill object-fill rounded-xl "
               />
             </div>
-            <div className="space-y-5">
-              <h2 className=" text-2xl md:text-3xl lg:text-4xl font-bold ">
+            <div className="space-y-7">
+              <h2 className="text-xl xl:text-3xl md:text-3xl lg:text-4xl font-bold ">
                 An AI-powered job interview platform built with Next.js,
                 Firebase, TailwindCSS, and Vapi AI Voice Agents.
               </h2>
-              <p className="text-white-50 md:text-xl">
+              <p className="text-white-50 text-base md:text-xl">
                 This platform lets users simulate job interviews using
                 voice-based AI agents, Google Gemini, and stores data securely
                 via Firebase
@@ -76,9 +76,9 @@ export const ProjectSection = () => {
                 <img
                   src="/images/project2.png"
                   alt="projects"
-                  className="w-full h-[250px] object- rounded-xl"
+                  className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2">
+                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
                   A fullstack e-commerce web application.
                 </h3>
               </div>
@@ -87,9 +87,9 @@ export const ProjectSection = () => {
                 <img
                   src="/images/project3.jpeg"
                   alt="projects"
-                  className="w-full h-[250px] object-contain rounded-xl"
+                  className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2">
+                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
                   Cloud Service platform
                 </h3>
               </div>
@@ -99,7 +99,7 @@ export const ProjectSection = () => {
                   alt="projects"
                   className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2">
+                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
                   Online Learning Course Platform
                 </h3>
               </div>

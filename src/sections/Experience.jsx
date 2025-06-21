@@ -51,7 +51,7 @@ export const Experience = () => {
           title="Professional Experience"
           subTitle="💼 Career Highlights & Roles"
         />
-        <div className="mt-32 relative">
+        <div className=" mt-15 xl:mt-32 relative">
           <div className="relative z-50 xl:space-y-10 space-y-7">
             {experiences.map((exp, index) => {
               return (
@@ -59,11 +59,11 @@ export const Experience = () => {
                   key={index}
                   className="flex flex-col-reverse xl:flex-row xl:gap-10 gap-5 justify-between"
                 >
-                  <div className="absolute top-0 xl:w-2/6 md:left-10 left-5 h-full flex z-[-1]">
+                  <div className="absolute  top-10 xl:top-0 xl:w-2/6 md:left-10 left-5 h-full flex z-[-1]">
                     <div className="timeline absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black" />
                     <div className="gradient-line w-1 h-full" />
                   </div>
-                  <div className=" md:size-20 size-10   md:-translate-y-7 border border-black-50 bg-black-100">
+                  <div className="hidden md:block md:size-20 size-10  md:-translate-y-7 ">
                     <img
                       src={exp.logoPath}
                       alt="logo"
