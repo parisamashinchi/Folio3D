@@ -7,7 +7,7 @@ import TopBannerLights from "./TopBannerLight.jsx";
 export const TopBanner = () => {
   const isMobile = useMediaQuery({ query: "(max-width:768px)" });
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+    <Canvas camera={{ position:isMobile? [0,0, 7] : [0, 0, 10], fov: 50 }}>
       
       <OrbitControls
         enablePan={true}

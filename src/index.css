@@ -52,7 +52,7 @@ section {
   }
 
   .TopBanner-3d-layout {
-    @apply xl:w-[50%] w-full xl:h-full  xl:min-h-[50vh] min-h-[35vh] mt-14;
+    @apply xl:w-[50%]  xl:h-full  xl:min-h-[50vh] xl:mt-48  mt-10 flex flex-col items-center justify-center w-full h-screen  ;
   }
 
   form {

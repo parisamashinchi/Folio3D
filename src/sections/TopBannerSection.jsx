@@ -61,7 +61,7 @@ export const TopBannerSection = () => {
           <Button text="my projects" className="md:h-14 h-12 md:w-70 w-50" />
           </div>
         </header>
-        <figure className="TopBanner-3d-layout flex flex-col items-center xl:mt-48">
+        <figure className="TopBanner-3d-layout ">
             <TopBanner/>
         </figure> 
       </div>
