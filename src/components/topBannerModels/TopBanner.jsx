@@ -19,7 +19,7 @@ export const TopBanner = () => {
       />
 
       <TopBannerLights />
-      <group scale={isMobile ? 1.4 : 1}>
+      <group scale={isMobile ? 1 : 1}>
         <LateNightOffice />
       </group>
     </Canvas>
