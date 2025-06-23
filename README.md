@@ -62,4 +62,5 @@ My dream is to contribute to impactful open-source projects that empower develop
 Outside of work, you’ll often find me biking around Berlin!
 
 🎯 Let's Connect!
+🧑‍💻 <a href="https://parisa-mashinchi.com" >My portfolio</a>
 💼 <a href="https://www.linkedin.com/in/parisa-mashinchi-8a1b2266" >LinkedIn</a>
