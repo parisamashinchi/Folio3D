@@ -52,7 +52,7 @@ export const Navbar = () => {
         </nav>
       </div>
       {collapsedMenu && (
-        <ul className="flex flex-col justify-end gap-3 mt-2">
+        <ul className="flex flex-col justify-end gap-3 mt-2 bg-black">
           {NavLinks.map(({ link, name }) => (
             <li key={name} className="text-white-50 relative group">
               <a href={link}>

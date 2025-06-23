@@ -78,7 +78,7 @@ export const ProjectSection = () => {
                   alt="projects"
                   className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
+                <h3 className="text-base  font-semibold mt-2 ">
                   A fullstack e-commerce web application.
                 </h3>
               </div>
@@ -89,7 +89,7 @@ export const ProjectSection = () => {
                   alt="projects"
                   className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
+                <h3 className="text-base  font-semibold mt-2 ">
                   Cloud Service platform
                 </h3>
               </div>
@@ -99,7 +99,7 @@ export const ProjectSection = () => {
                   alt="projects"
                   className="w-full h-[250px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 text-center xl:text-start">
+                <h3 className="text-base  font-semibold mt-2 ">
                   Online Learning Course Platform
                 </h3>
               </div>
