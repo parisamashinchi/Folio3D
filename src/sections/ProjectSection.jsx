@@ -11,6 +11,8 @@ export const ProjectSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
   const project4Ref = useRef(null);
+  const project5Ref = useRef(null);
+
 
   useGSAP(() => {
     const projects = [
@@ -18,6 +20,8 @@ export const ProjectSection = () => {
       project2Ref.current,
       project3Ref.current,
       project4Ref.current,
+      project5Ref.current,
+
     ];
     projects.map((project, index) => {
       gsap.fromTo(
@@ -59,47 +63,54 @@ export const ProjectSection = () => {
               />
             </div>
             <div className="space-y-7">
-              <h2 className="text-xl xl:text-3xl md:text-3xl lg:text-4xl font-bold ">
+              <h2 className="text-xl xl:text-2xl md:text-2xl lg:text-4xl font-bold ">
                 An AI-powered job interview platform built with Next.js,
                 Firebase, TailwindCSS, and Vapi AI Voice Agents.
               </h2>
-              <p className="text-white-50 text-base md:text-xl">
-                This platform lets users simulate job interviews using
-                voice-based AI agents, Google Gemini, and stores data securely
-                via Firebase
-              </p>
             </div>
+             <div className=" xl:h-[300px] relative">
+              <img
+                src="/images/project5.png"
+                alt="projects"
+                className=" w-full h-[300px]  xl:object-fill object-fill rounded-xl "
+              />
+            </div>
+            <div className="space-y-7">
+              <h2 className="text-xl xl:text-2xl md:text-2xl lg:text-4xl font-bold ">
+                  A modern social networking platform.
+              </h2>
+              </div>
           </div>
           <div className=" flex flex-col justify-end xl:w-[40%] md:flex-row gap-2  overflow-hidden">
             <div className="flex flex-col gap-2 ">
-              <div ref={project2Ref}>
+              <div ref={project3Ref}>
                 <img
                   src="/images/project2.png"
                   alt="projects"
-                  className="w-full h-[250px] object-fill rounded-xl"
+                  className="w-full h-[270px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 ">
+                <h3 className="text-base  font-semibold my-5 ">
                   A fullstack e-commerce web application.
                 </h3>
               </div>
 
-              <div ref={project3Ref}>
+              <div ref={project4Ref}>
                 <img
                   src="/images/project3.jpeg"
                   alt="projects"
-                  className="w-full h-[250px] object-fill rounded-xl"
+                  className="w-full h-[270px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 ">
+                <h3 className="text-base  font-semibold my-5 ">
                   Cloud Service platform
                 </h3>
               </div>
-              <div ref={project4Ref}>
+              <div ref={project5Ref}>
                 <img
                   src="/images/project4.png"
                   alt="projects"
-                  className="w-full h-[250px] object-fill rounded-xl"
+                  className="w-full h-[270px] object-fill rounded-xl"
                 />
-                <h3 className="text-base  font-semibold mt-2 ">
+                <h3 className="text-base  font-semibold my-5 ">
                   Online Learning Course Platform
                 </h3>
               </div>
